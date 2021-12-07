@@ -1,0 +1,32 @@
+.wishlist-item {
+    width: 400px;
+    height: auto;
+    background:#fff;
+    display: flex;
+    flex-direction: column;
+    margin: 1rem;
+    box-shadow: #28575682 2px 4px 6px 0px;
+    border-radius: 3px;
+    justify-content: space-between;
+}
+
+.wishlist-item img {
+    height: 300px;
+    width: 100%;
+    object-fit: cover;
+    margin: 0 auto;
+}
+
+.wishlist-item a {
+    text-decoration: none;
+    color: #181818;
+}
+
+.info{
+    padding: 0 2rem;
+    margin-bottom: 1rem;
+}
+
+.price {
+    font-size: 20px;
+}
