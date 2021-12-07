@@ -13,6 +13,9 @@
     text-transform: uppercase;
     border-radius: 4rem;
 }
+.primary a {
+    color: #fff;
+}
 
 .secondary {
     border: none;
@@ -29,6 +32,9 @@
     text-transform: uppercase;
     border-radius: 4rem;
 }
+.secondary a {
+    color: #14040e;
+}
 
 .tertiary {
     border: none;
@@ -43,6 +49,9 @@
     width: 100%;
     text-transform:capitalize;
     text-decoration: underline;
+}
+.tertiary a {
+    color:#000000;
 }
 
 button:disabled {

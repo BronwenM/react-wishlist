@@ -3,7 +3,7 @@ import './styles.css';
 import { Button } from '../Button';
 
 export const Item = (props) => {
-    const {image, name, price, shortDescr, isOwned, id} = props;
+    const {image, name, price, shortDescr, isOwned, id, link} = props;
 
     return (
         <div className="wishlist-item">
@@ -15,7 +15,7 @@ export const Item = (props) => {
                 <p className="description">{shortDescr}</p>
                 <p className="price">{price}</p>
             
-            <Button text="Purchase" type="primary" isDisabled={isOwned}/>
+            <Button text="Purchase" type="primary" isDisabled={isOwned} link={link}/>
             <Button text="Remove From List" type="tertiary" isDisabled={false}/>
 
             </div>
