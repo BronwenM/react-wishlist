@@ -1,7 +1,6 @@
 import { Item } from '../../Item';
 import './styles.css';
 import { useContext, useEffect, useState } from 'react';
-import { useHistory } from 'react-router';
 import WishlistContext from '../../../context/wishlistContext';
 
 export const HomePage = () => {

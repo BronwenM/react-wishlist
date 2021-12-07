@@ -6,8 +6,9 @@
     flex-direction: column;
     margin: 1rem;
     box-shadow: #28575682 2px 4px 6px 0px;
-    border-radius: 3px;
+    border-radius: 1rem;
     justify-content: space-between;
+    padding: 1rem 1rem 0rem 1rem;
 }
 
 .wishlist-item img {

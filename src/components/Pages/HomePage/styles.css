@@ -1,0 +1,9 @@
+.items-list {
+    display: flex;
+    flex-direction: row;
+}
+
+.wishlist-items {
+    text-align: center;
+    margin: 2rem 0;
+}

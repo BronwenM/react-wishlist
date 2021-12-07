@@ -1,0 +1,38 @@
+.add-item-page {
+    display: flex;
+    justify-content: center;
+}
+
+.add-item-page h2 {
+    text-align: center;
+}
+
+.new-item-form {
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    margin-top: 2rem;
+    padding: 3rem 3.5rem;
+    border-radius: 0.5rem;
+}
+
+.new-item-form input {
+    min-height: 40px;
+    width: 400px;
+    margin-bottom: 10px;
+    font-size: 1.3rem;
+    border-radius: 5px;
+    border: 1px solid grey;
+    background-color: #f9f9f9;
+}
+
+.new-item-form [type=submit] {
+    cursor: pointer;
+    width: 100%;
+    margin-top: 1rem;
+    padding: 1rem 0;
+    height: auto;
+    background-color: #E8A87C;
+    border: none;
+    color: #532405;
+}
