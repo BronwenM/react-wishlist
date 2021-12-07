@@ -1,11 +1,14 @@
 import { Item } from '../../Item';
 import './styles.css';
-import { useEffect, useState } from 'react';
+import { useContext, useEffect, useState } from 'react';
 import { useHistory } from 'react-router';
+import WishlistContext from '../../../context/wishlistContext';
 
 export const HomePage = () => {
 
     const [items, setItems] = useState([]);
+
+    const globalState = useContext(WishlistContext);
 
     const getItems = async() => {
         try{
@@ -20,6 +23,7 @@ export const HomePage = () => {
             console.log(formattedData);
 
             setItems(formattedData);
+            globalState.initItems(formattedData);
 
         }catch(error){
             console.log(error);
@@ -34,7 +38,6 @@ export const HomePage = () => {
 
     return (
         <div className="home-page">
-            <Item name="Wilbur" image="https://upload.wikimedia.org/wikipedia/commons/0/0e/Wilbur_Soot_2020.jpg" price="$69.420" shortDescr="Wilbur Soot is a musician and minecraft twitch streamer." isOwned={false} id={12} link="https://www.google.ca/"/>
             <h1 className="wishlist-items">My Wishlist</h1>
             <div className="items-list">
                 {

@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import { WishlistContextProvider } from './context/wishlistContext';
 
 
 // Import the functions you need from the SDKs you need
@@ -24,9 +25,9 @@ const firebaseConfig = {
 const app = initializeApp(firebaseConfig);
 
 ReactDOM.render(
-  <React.StrictMode>
+  <WishlistContextProvider>
     <App />
-  </React.StrictMode>,
+  </WishlistContextProvider>,
   document.getElementById('root')
 );
 
