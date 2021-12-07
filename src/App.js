@@ -12,10 +12,9 @@ function App() {
     <Router>
       <Navbar/>
       <Routes>
-        <Route exact path="/" element={<HomePage/>}></Route>
-        <Route path="/login" element={<h1>This is the home page</h1>}></Route>
-        <Route path="/wishlist-items/:id" element={<ItemDetails/>}></Route>
-        <Route path="/wishlist-items/add" element={<AddItemPage/>}></Route>
+        <Route exact path="/" element={<HomePage/>}/>
+        <Route path="/wishlist-items/:id" element={<ItemDetails/>}/>
+        <Route path="/wishlist-items/add" element={<AddItemPage/>}/>
       </Routes>
     </Router>
   );

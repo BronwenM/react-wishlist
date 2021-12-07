@@ -40,7 +40,7 @@ export const HomePage = () => {
             <h1 className="wishlist-items">My Wishlist</h1>
             <div className="items-list">
                 {
-                    items.map( (item) => <Item image={item.image.stringValue} name={item.name.stringValue} price={item.price.stringValue} shortDescr={item.shortDesc.stringValue} isOwned={item.isOwned.booleanValue} id={item.id.stringValue} link={item.link.stringValue} />)
+                    items.map( (item) => <Item image={item.image.stringValue} name={item.name.stringValue} price={item.price.stringValue} shortDescr={item.shortDesc.stringValue} isOwned={item.isOwned.booleanValue} id={item.id.stringValue} link={item.link.stringValue}/>)
                 }
             </div>
         </div>

@@ -1,9 +1,12 @@
 import { NavLink } from 'react-router-dom';
 import './styles.css';
 import { Button } from '../Button';
+import WishlistContext from '../../context/wishlistContext';
+import { useContext } from 'react';
 
 export const Item = (props) => {
     const {image, name, price, shortDescr, isOwned, id, link} = props;
+    const globalState = useContext(WishlistContext);
 
     return (
         <div className="wishlist-item">
@@ -16,7 +19,7 @@ export const Item = (props) => {
                 <p className="price">{price}</p>
             
             <Button text="Purchase" type="primary" isDisabled={isOwned} link={link}/>
-            <Button text="Remove From List" type="tertiary" isDisabled={false}/>
+            <Button text="Remove From List" type="tertiary" isDisabled={false} action={globalState.removeItem(id)}/>
 
             </div>
         </div>

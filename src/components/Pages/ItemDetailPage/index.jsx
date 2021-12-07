@@ -1,5 +1,5 @@
 import './styles.css'
-import { useParams } from 'react-router';
+import { useParams } from 'react-router-dom';
 import { useContext, useEffect, useState } from 'react';
 import WishlistContext from '../../../context/wishlistContext';
 
@@ -13,7 +13,7 @@ export const ItemDetails = (props) => {
             (item) => item.id.stringValue === id
         );
         setItem(item);
-    }, []);
+    }, [])
 
     if(item) {
         return (
